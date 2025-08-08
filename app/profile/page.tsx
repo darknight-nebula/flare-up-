@@ -11,7 +11,6 @@ import { ArrowLeft, User, Mail, Calendar, Trophy, Heart, Sun, Moon, Target, Cloc
 import Link from "next/link"
 import { useRouter } from 'next/navigation'
 import { useTheme } from "next-themes"
-import { AudioPlayer } from "@/components/audio-player"
 
 interface User {
   name: string
@@ -402,9 +401,6 @@ export default function ProfilePage() {
           </div>
         </div>
       </main>
-
-      {/* Audio Player */}
-      <AudioPlayer />
     </div>
   )
 }

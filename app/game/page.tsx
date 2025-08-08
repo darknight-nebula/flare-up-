@@ -9,7 +9,6 @@ import { Upload, Heart, ArrowLeft, Camera, Sun, Moon } from 'lucide-react'
 import Link from "next/link"
 import { useRouter } from 'next/navigation'
 import { useTheme } from "next-themes"
-import { AudioPlayer } from "@/components/audio-player"
 
 export default function GamePage() {
   const [name1, setName1] = useState('')
@@ -340,9 +339,6 @@ export default function GamePage() {
           </Card>
         </div>
       </main>
-
-      {/* Audio Player */}
-      <AudioPlayer />
     </div>
   )
 }

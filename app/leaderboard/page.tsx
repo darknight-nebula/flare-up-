@@ -7,7 +7,6 @@ import { Progress } from "@/components/ui/progress"
 import { Trophy, Medal, Award, ArrowLeft, Crown, Sun, Moon, Clock, Target } from 'lucide-react'
 import Link from "next/link"
 import { useTheme } from "next-themes"
-import { AudioPlayer } from "@/components/audio-player"
 
 interface LeaderboardEntry {
   playerName: string
@@ -354,9 +353,6 @@ export default function LeaderboardPage() {
           </Card>
         </div>
       </main>
-
-      {/* Hidden Background Audio */}
-      <AudioPlayer />
     </div>
   )
 }
