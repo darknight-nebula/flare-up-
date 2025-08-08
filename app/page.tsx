@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label"
 import { Heart, Flame, Sparkles, Crown, Star, Zap, Trophy, Users, TrendingUp, Sun, Moon } from 'lucide-react'
 import Link from "next/link"
 import { useTheme } from "next-themes"
+import { AudioPlayer } from "@/components/audio-player"
 
 export default function HomePage() {
   const [isSignUp, setIsSignUp] = useState(true)
@@ -188,6 +189,9 @@ export default function HomePage() {
             </div>
           </CardContent>
         </Card>
+
+        {/* Audio Player */}
+        <AudioPlayer />
 
         <style jsx>{`
           @keyframes float {
@@ -584,6 +588,9 @@ export default function HomePage() {
           </div>
         </div>
       </main>
+
+      {/* Audio Player */}
+      <AudioPlayer />
 
       <style jsx>{`
         @keyframes float {
