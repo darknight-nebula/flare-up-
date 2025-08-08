@@ -9,6 +9,7 @@ import { Heart, Share2, ArrowLeft, Trophy, RefreshCw, Flame, Sun, Moon, Calendar
 import Link from "next/link"
 import { useRouter } from 'next/navigation'
 import { useTheme } from "next-themes"
+import { AudioPlayer } from "@/components/audio-player"
 
 interface GameResult {
   name1: string
@@ -903,6 +904,9 @@ export default function ResultsPage() {
           </Tabs>
         </div>
       </main>
+
+      {/* Hidden Background Audio */}
+      <AudioPlayer />
     </div>
   )
 }
